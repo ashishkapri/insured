@@ -1,0 +1,16 @@
+<div class="grid-container">
+  <mat-grid-list cols="6" rowHeight="250px">
+    <mat-grid-tile *ngFor="let card of cardImages">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            {{ card.title }}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <img mat-card-image src="{{ card.imgUrl }}" />
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

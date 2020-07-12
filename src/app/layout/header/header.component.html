@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <h1>Insured Mine</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button routerLink="/home"> Home </a>
+      <span *ngIf="isLogIn">
+        <a mat-button routerLink="/gallery"> Gallery </a>
+      </span>
+      <a mat-button routerLink="/about"> About </a>
+    </div>
+    <div class="button-right">
+      <div class="button-group">
+        <a
+          *ngIf="!isLogIn"
+          mat-button
+          class="md-primary md-raised"
+          (click)="openLogin()"
+          >Login</a
+        >
+      </div>
+      <div class="button-group" *ngIf="isLogIn">
+        <span class="user-name"> {{ userName | uppercase }}</span>
+        <a mat-button class="md-primary md-raised" (click)="logout()">Logout</a>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

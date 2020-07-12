@@ -1,0 +1,13 @@
+[
+  { "imgUrl": "./assets/images/img1.jpg", "title": "Travel" },
+  { "imgUrl": "./assets/images/img3.jpg", "title": "Laptop" },
+  { "imgUrl": "./assets/images/img4.jpg", "title": "Nature" },
+  { "imgUrl": "./assets/images/img5.jpg", "title": "Sky" },
+  { "imgUrl": "./assets/images/img6.jpg", "title": "Home Alone" },
+  { "imgUrl": "./assets/images/img7.jpg", "title": "Dream" },
+  { "imgUrl": "./assets/images/img11.jpg", "title": "Scenic" },
+  { "imgUrl": "./assets/images/img13.jpg", "title": "Bunglow" },
+  { "imgUrl": "./assets/images/img15.jpg", "title": "Army" },
+  { "imgUrl": "./assets/images/img16.jpg", "title": "Something" },
+  { "imgUrl": "./assets/images/img18.jpg", "title": "Angle" }
+]

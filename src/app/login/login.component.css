@@ -1,0 +1,15 @@
+.mat-form-field {
+  display: inline;
+}
+
+.mat-card-title {
+  text-align: center;
+}
+
+.button-class {
+  display: grid;
+}
+
+.button_primary {
+  margin-top: 5px;
+}

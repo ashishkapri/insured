@@ -1,0 +1,69 @@
+<mat-card-title>Please login to continue</mat-card-title>
+
+<mat-dialog-content>
+  <form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
+    <div class="error_message">
+      {{ myErrorMessage }}
+    </div>
+    <div class="example-container">
+      <mat-form-field class="full-width-input">
+        <input
+          matInput
+          placeholder="User Id"
+          ngModel
+          name="userId"
+          #userId="ngModel"
+          required
+        />
+        <mat-error *ngIf="isFieldInvalid('userId')">
+          Enter valid user id
+        </mat-error>
+      </mat-form-field>
+
+      <p>
+        <mat-form-field class="full-width-input">
+          <input
+            matInput
+            placeholder="User Name"
+            ngModel
+            name="userName"
+            #userName="ngModel"
+            required
+          />
+          <mat-error *ngIf="isFieldInvalid('userName')">
+            Enter valid user name
+          </mat-error>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field class="full-width-input">
+          <input
+            type="password"
+            matInput
+            placeholder="Password"
+            ngModel
+            name="password"
+            #password="ngModel"
+            required
+          />
+          <mat-error *ngIf="isFieldInvalid('password')">
+            Enter valid password
+          </mat-error>
+        </mat-form-field>
+      </p>
+
+      <div class="button-class">
+        <button mat-button mat-dialog-close>Cancel</button>
+        <button
+          type="submit"
+          class="button_primary"
+          mat-raised-button
+          color="primary"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+  </form>
+</mat-dialog-content>
